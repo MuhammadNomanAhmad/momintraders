@@ -1,0 +1,22 @@
+.card-image-container{
+overflow: hidden;
+filter: brightness(80%);
+
+}
+.card-image-container:hover{
+ 
+  filter: brightness(100%);
+  }
+  .card-img-top{
+    transform: scale(1);
+    transition: transform 1s ease-in-out ;
+  }
+.card-img-top:hover{
+transform: scale(1.5);
+
+
+}
+
+.product-container{
+  background-color: rgb(0, 0, 0);
+}

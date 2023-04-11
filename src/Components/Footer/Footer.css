@@ -1,0 +1,40 @@
+.footer-bg{
+  background-color: black;
+}
+.footer-brand-heading {
+  color: white;
+  
+}
+.brand-detail-footer{
+  font-size: .8rem;
+  
+  line-height: 16px;
+}
+
+.links h6{
+  color: white;
+  font-weight: bold !important;
+}
+.unorderlist-navlinks{
+  padding-left: 0;
+}
+.footer-links-list{
+  list-style: none;
+  padding: 20px 0;
+  
+}
+.footer-navlink{
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+}
+.footer-contact-us-info{
+  color: white;
+}
+.footer-contact-us-info{
+  padding-left: 15px;
+}
+.footer-hr{
+  border: 1px solid rgb(255, 255, 255) ;
+  opacity: .6;
+}

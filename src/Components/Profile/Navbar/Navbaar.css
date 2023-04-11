@@ -1,0 +1,38 @@
+.brand-logo {
+  width: 200px;
+}
+.nav-bg-color {
+  background-color: black;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+.navbar-light .navbar-toggler {
+  color: transparent;
+}
+
+.navbar-toggler-Icon {
+  color: white;
+}
+
+.navbarLink {
+  color: white !important;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+  .navbarLink.active::after {
+    content: "";
+    display: block;
+    background: linear-gradient(to right, #20d4fe 0%, #b722ff 100%);
+    width: 100%;
+    height: 3px;
+  }
+}
+.navbarLink.active {
+  background: linear-gradient(to right, #20d5fefb 0%, #b522ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
