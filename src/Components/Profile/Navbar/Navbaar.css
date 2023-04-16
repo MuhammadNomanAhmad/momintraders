@@ -21,13 +21,29 @@
   font-weight: 600;
   font-size: 1.2rem;
 }
+.navbarLink:hover {
+  background: linear-gradient(to right, #20d4fe 0%, #b722ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @media (min-width: 992px) {
-  .navbarLink.active::after {
+  .navbarLink {
+    position: relative;
+  }
+  .navbarLink::after {
     content: "";
-    display: block;
-    background: linear-gradient(to right, #20d4fe 0%, #b722ff 100%);
-    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0%;
     height: 3px;
+    background: linear-gradient(to right, #20d4fe 0%, #b722ff 100%);
+    transition: all 1s ease-in-out;
+  }
+  .navbarLink:hover::after {
+    width: 100%;
   }
 }
 .navbarLink.active {

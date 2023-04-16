@@ -1,10 +1,30 @@
 .img-size {
   width: 100% !important;
   height: 100vh;
-  
+
+  /* color: rgb(0, 0, 0); */
  object-fit: cover;
 }
+.carousel-bg{
+  background-color: #20D4FE !important;
+}
+.carousel-inner {
+  background-color: black !important;
+  }
 
+.mainPage-heading{
+  font-weight: bold;
+  filter: brightness(800%);
+  filter: contrast(900%); 
+  /* color: white; */
+  background:linear-gradient(to right, #20D4FE 0%, #B722FF 100%) ;
+  background-color: #B722FF ;
+  
+  background-clip: text;
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   /* background-color: rgb(248, 25, 0) !important; */
@@ -16,8 +36,9 @@
 
 
 .carousel-item img {
-  filter: contrast(200%);
-  filter: brightness(70%);
+   filter: contrast(200%);
+  filter: brightness(50%);
+  /* background-color: black !important; */
 }
 
 .carousel-caption{

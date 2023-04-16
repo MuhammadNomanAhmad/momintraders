@@ -1,90 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,600;1,400;1,700&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,600;1,400;1,700&display=swap');
-
-h1,h2,h3,h4,h5,h6,p,a,span{
-  font-family: 'IBM Plex Serif', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  font-family: "IBM Plex Serif", serif;
 }
-.aboutsection-bgcolor{
+.aboutsection-bgcolor {
   background-color: black;
 }
 
-.aboutus-heading{
-  background: linear-gradient(to right, #20D4FE 0%, #B722FF 100%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: -moz-max-content;
-    width: max-content;
-    cursor: pointer;
+.aboutus-heading {
+  background: linear-gradient(to right, #20d4fe 0%, #b722ff 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
 }
-.aboutus-heading::after{
-  content: '';
+.aboutus-heading::after {
+  content: "";
   display: block;
   width: 0%;
   height: 3px;
-  background: linear-gradient(to right, #20D4FE 0%, #B722FF 100%);
+  background: linear-gradient(to right, #20d4fe 0%, #b722ff 100%);
   margin: auto;
   transition: all 1s ease-in-out;
-
 }
-.aboutus-heading:hover::after{
+.aboutus-heading:hover::after {
   width: 100%;
 }
 
-.our-mission-text{
-font-size: 1.1rem;
+.our-mission-text {
+  font-size: 1.1rem;
 }
 
-.our-brand-customers{
-  height: 500px;
+.our-brand-customers {
+  height: auto;
   width: 100%;
 }
-
-
-
-
-
-
-
 
 /***** Swiper Slider  Section *****/
 
+.mybrandSwiper {
+  width: 100% !important;
 
-
-.swiper {
-  width: 100%;
-  height: 60%;
-}
-SwiperSlide{
-
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fffffff8;
-  background: linear-gradient(to right, #20d5fefb 0%, #b522ff 100%);
-  border-radius: 20px;
-  
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
- 
-  display: block;
-  width: 100%;
   height: 100%;
-  object-fit: contain;
-  filter: contrast(300%);
-  
+
+  border-radius: 20px;
+  padding: 40px 20px;
 }
 
+.our-client-brand {
+  display: block;
+  width: 100% !important;
+  height: 100%;
+  object-fit: contain !important;
+
+  background: linear-gradient(to right, #20d5fe 0%, #b522ffd2 100%);
+  border-radius: 20px;
+  padding: 40px 40px;
+}
+.about-img{
+  filter: brightness(70%);
+  transition: all .5s ease-in-out;
+}
+.about-img:hover{
+  filter: brightness(90%);
+  
+  
+}
 .swiper-pagination-bullet-active {
-  background-color: white !important;
-  
+  background-color: #b522ff !important;
 }
 
+.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 1;
+  padding: 3px;
+  bottom: 10% !important;
+}
 /***** End Section *****/

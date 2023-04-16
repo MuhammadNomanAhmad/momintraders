@@ -4,11 +4,12 @@ import './App.css';
 import Navbaar from './Components/Profile/Navbar/Navbaar';
 import HomePage from './Components/Profile/HomePage/HomePage';
 import AboutUs from './Components/Profile/AboutUs/AboutUs';
-import Product from './Components/Profile/Products/Product';
+// import Product from './Components/Profile/Products/Product';
 import Footer from './Components/Footer/Footer';
 import ContactUs from './Components/ContactUs/ContactUs';
 import Products from './Components/AllProduts/Products';
 import productData from './Components/AllProduts/ProductData';
+import AllProduct from './CompanyProduct/AllProduct';
 function App() {
   return (
     <>
@@ -37,9 +38,11 @@ function App() {
       <Navbaar />
       <HomePage />
       <AboutUs />
-      <Products productData={productData} />
+      <AllProduct />
+      {/* <Products productData={productData} /> */}
       <ContactUs />
       <Footer />
+      
       
     </>
   );

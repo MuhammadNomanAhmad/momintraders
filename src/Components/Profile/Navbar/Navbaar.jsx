@@ -1,12 +1,11 @@
 import React from "react";
 import logo from "../../../Assets/logomt.png";
 import "./Navbaar.css";
-// import { NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbaar = () => {
   return (
-    <div className="header-bg-Image  ">
+    <div className="navbar-main-container  ">
       <nav className="navbar navbar-expand-lg navbar-light nav-bg-color fixed-top  ">
         <div className="container ">
           <a className="navbar-brand" href="#">
@@ -26,7 +25,7 @@ const Navbaar = () => {
             </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mt-3 mt-lg-0 mb-3 text-center mb-lg-0">
+            <ul className="navbar-nav ms-auto mt-3 mt-lg-0 mb-3 text-center mb-lg-0 navbarLink-container">
               <li className="nav-item">
                 <a className="nav-link navbarLink  " href="#home">
                   HOME

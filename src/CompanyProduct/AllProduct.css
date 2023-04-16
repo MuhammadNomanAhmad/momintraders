@@ -1,0 +1,40 @@
+.product-container{
+  background-color: black;
+}
+
+.myProductSwiper {
+  width: 100%;
+  height: 100%;
+}
+.myProductSlider {
+}
+.card {
+  box-shadow: 3px 3px #20d5fe, 0.4em 0 1.3em #b522ffd2;
+  transform: translate(0, 0);
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  transform: translate(5px, -7px);
+}
+
+.card-image-container {
+  overflow: hidden;
+  filter: brightness(80%);
+  transition: all 0.5s ease-in-out;
+}
+
+.card-image-container:hover {
+  filter: brightness(100%);
+}
+.card-img {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+.card-img:hover {
+  transform: scale(1.3);
+}
+
+.card-body {
+  background: black;
+  font-weight: 500;
+}

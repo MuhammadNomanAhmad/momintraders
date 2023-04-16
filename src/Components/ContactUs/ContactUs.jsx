@@ -13,20 +13,13 @@ const ContactUs = () => {
     <div className="row justify-content-center py-5 ">
       <div className="col-8">
       <form class="row g-3">
-{/* <div className="row ">
-  <div className="col">
-    <input type="text" className="form-control" placeholder="First name" aria-label="First name" />
-  </div>
-  <div className="col">
-    <input type="text" className="form-control" placeholder="Last name" aria-label="Last name" />
-  </div>
-</div> */}
+
 <div class="col-md-6">
     <label for="inputFirstName" class="form-label">First Name</label>
     <input type="text" class="form-control" id="inputFirstName" placeholder="First Name"  />
   </div>
   <div class="col-md-6">
-    <label for="inputLastName" class="form-label">First Name</label>
+    <label for="inputLastName" class="form-label">Last Name</label>
     <input type="text" class="form-control" id="inputLastName" placeholder="Last Name"  />
   </div>
   <div class="col-md-6">
@@ -72,8 +65,8 @@ const ContactUs = () => {
     {/* <button type="submit" class="btn btn-primary">Sign in</button> */}
     <div className="row justify-content-center">
             <div className="button text-center">
-              <button className="product-btn">
-              <a href="#" className="btn-link">Send Message</a>
+              <button className="contact-btn">
+              <a href="#" className="contact-btn-link">Send Message</a>
               </button>
             </div>
           </div>

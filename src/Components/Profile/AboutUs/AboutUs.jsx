@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import { Pagination ,Autoplay} from "swiper";
 
 import './AboutUs.css'
-import aboutImg1 from '../../../Assets/about.jpg'
+import aboutImg1 from '../../../Assets/ourmission.jpg'
 import clientImg1 from '../../../Assets/clients/client-1.png'
 import clientImg2 from '../../../Assets/clients/client-2.png'
 import clientImg3 from '../../../Assets/clients/client-3.png'
@@ -44,7 +44,7 @@ We believe that <strong>“Only quality has the future” </strong>
       </div>
       <div className="col-lg-7">
     <div className="image-container">
-        <img src={aboutImg1} alt="" className='img-fluid' />
+        <img src={aboutImg1} alt="" className='img-fluid about-img' />
       </div>
     </div>
       
@@ -75,11 +75,13 @@ We believe that <strong>“Only quality has the future” </strong>
 </div>
     </div> */}
     <div className="row py-5  " data-aos="fade-up">
-<div className="col ">
-<h1 className='aboutus-heading pb-5  '>OUR  CLIENTS</h1>
-<Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+    <h1 className='aboutus-heading pb-5  '>OUR  CLIENTS</h1>
+<div className=" ">
+
+
+<Swiper  
+        // slidesPerView={3}
+        // spaceBetween={30}
         pagination={{
           clickable: true,
         }}
@@ -88,24 +90,43 @@ We believe that <strong>“Only quality has the future” </strong>
           disableOnInteraction: false,
         }}
         modules={[Pagination,Autoplay]}
-        className="mySwiper"
+        className="mybrandSwiper"
+        breakpoints={{
+          0:{
+            slidesPerView:1,
+        spaceBetween:10
+          },
+          480:{
+            slidesPerView:1,
+        spaceBetween:10
+          },
+          768:{
+            slidesPerView:2,
+        spaceBetween:30
+          },
+          992:{
+            slidesPerView:3,
+        spaceBetween:30
+          },
+        }}
+
       >
-        <SwiperSlide className='p-2 p-md-3 p-lg-5'>
+        <SwiperSlide className=' brandSwiperSlider' >
         <img src={clientImg1} alt="" className='our-client-brand'/>
         </SwiperSlide>
-        <SwiperSlide className='p-2 p-md-3 p-lg-5'> <img src={clientImg2} alt="" className='our-client-brand'/></SwiperSlide>
-        <SwiperSlide className='p-2 p-md-3 p-lg-5'> <img src={clientImg3} alt="" className='our-client-brand'/></SwiperSlide>
-        <SwiperSlide className='p-2 p-md-3 p-lg-5'> <img src={clientImg4} alt="" className='our-client-brand'/></SwiperSlide>
-        <SwiperSlide className='p-2 p-md-3 p-lg-5'> <img src={clientImg5} alt="" className='our-client-brand'/></SwiperSlide>
-        <SwiperSlide className='p-2 p-md-3 p-lg-5'> <img src={clientImg6} alt="" className='our-client-brand'/></SwiperSlide>
-        <SwiperSlide className='p-2 p-md-3 p-lg-5'> <img src={clientImg7} alt="" className='our-client-brand'/></SwiperSlide>
-        <SwiperSlide className='p-2 p-md-3 p-lg-5'> <img src={clientImg8} alt="" className='our-client-brand'/></SwiperSlide>
-        <SwiperSlide className='p-2 p-md-3 p-lg-5'> <img src={clientImg5} alt="" className='our-client-brand'/></SwiperSlide>
+        <SwiperSlide className=' brandSwiperSlider'> <img src={clientImg2} alt="" className='our-client-brand'/></SwiperSlide>
+        <SwiperSlide className=' brandSwiperSlider'> <img src={clientImg3} alt="" className='our-client-brand'/></SwiperSlide>
+        <SwiperSlide className=' brandSwiperSlider'> <img src={clientImg4} alt="" className='our-client-brand'/></SwiperSlide>
+        <SwiperSlide className=' brandSwiperSlider'> <img src={clientImg5} alt="" className='our-client-brand'/></SwiperSlide>
+        <SwiperSlide className=' brandSwiperSlider'> <img src={clientImg6} alt="" className='our-client-brand'/></SwiperSlide>
+        <SwiperSlide className=' brandSwiperSlider'> <img src={clientImg7} alt="" className='our-client-brand'/></SwiperSlide>
+        <SwiperSlide className=' brandSwiperSlider'> <img src={clientImg8} alt="" className='our-client-brand'/></SwiperSlide>
+        <SwiperSlide className=' brandSwiperSlider'> <img src={clientImg5} alt="" className='our-client-brand'/></SwiperSlide>
       </Swiper>
 </div>
-    </div>
+   
+</div>
   </div>
-
     </div>
     </div>
   )
